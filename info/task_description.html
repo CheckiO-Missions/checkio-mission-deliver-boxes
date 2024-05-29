@@ -1,38 +1,41 @@
 <!-- Describe task in general -->
+<p style="text-align: justify;">
+    You need to transport three empty boxes using a drone that can only lift one box at a time on each trip. In other words, you can always transport the three empty boxes by making three trips with the drone. But you might be able to do less than three trips if you can put one box inside another. The boxes are cube-shaped and the only restriction on placing one box inside another is size, regardless of weight.
+</p>
 
-<p>Você precisa transportar três caixas vazias usando um drone que pode levantar uma caixa por vez apenas em cada viagem. Quer dizer, sempre dá para transportar as três caixas vazias fazendo três viagens do drone. Mas talvez dê para fazer menos do que três viagens, se for possível colocar uma caixa dentro de outra. As caixas têm formato de cubo e a única restrição para uma caixa ser colocada dentro de outra é o tamanho, não importando o peso.</p>
-<p>Uma caixa de tamanho X pode ser colocada dentro de uma caixa de tamanho Y se X < Y. Note, portanto, que uma caixa não cabe dentro de outra do mesmo tamanho. Além disso, duas caixas de tamanhos X e Y podem ser colocadas, lado a lado, dentro de uma caixa de tamanho Z se (X+Y) < Z. </p>
-<p>A figura ilustra as quatro configurações possíveis para o drone fazer uma viagem.</p>
-         <img  title="example" src="{{MEDIA}}drone.png" alt="example" style="max-height: 300px"/>
-<p>Neste problema, os tamanhos das três caixas são dados em ordem crescente e seu programa deve computar o número mínimo de viagens que o drone pode fazer para transportar todas as três caixas.</p>
+<p style="text-align: justify;">
+    A box of size X can be placed inside a box of size Y if X < Y. Note, therefore, that a box does not fit inside another of the same size. Furthermore, two boxes of sizes X and Y can be placed side by side inside a box of size Z if (X+Y) < Z.
+</p>
+
+<p style="text-align: justify;">
+    The following scheme illustrates the four possible configurations for the drone to make a trip.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}drone.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p style="text-align: justify;">
+    In this problem, the sizes of the three boxes are given in ascending order and your program must compute the minimum number of trips the drone can make to transport all three boxes.
+</p>
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> A primeira entrada contém um inteiro A. A segunda contém um inteiro B. A terceira contém um inteiro C. Os três inteiros representam os tamanhos das três caixas.
+    <strong>Input:</strong> Three integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Saída: </strong>Seu programa deve imprimir uma linha contendo um inteiro, representando o número mínimo de viagens que o drone pode fazer para transportar todas as três caixas.
+    <strong>Output:</strong> Integer.
 </p>
 
 
 <!-- Put some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Exemplo:</strong>
+        <strong>Examples:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">countConsecutiveSummers(42) == 4
-countConsecutiveSummers(99) == 6
-</pre>
-{% else %}
-<pre class="brush: python">minimo_viagens(1, 2, 4) == 1
-minimo_viagens(1, 2, 2) == 2
-minimo_viagens(2, 2, 5) == 1
-minimo_viagens(2, 2, 2) == 3    
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
