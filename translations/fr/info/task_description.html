@@ -1,0 +1,41 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Vous devez transporter trois cartons vides à l'aide d'un drone qui ne peut soulever qu'un seul carton à la fois à chaque voyage. En d'autres termes, vous pouvez toujours transporter les trois boîtes vides en effectuant trois voyages avec le drone. Mais vous pourriez faire moins de trois voyages si vous pouviez mettre une boîte à l'intérieur d'une autre. Les boîtes sont en forme de cube et la seule restriction pour placer une boîte à l'intérieur d'une autre est la taille, quel que soit le poids.
+</p>
+
+<p style="text-align: justify;">
+    Une boîte de taille X peut être placée à l'intérieur d'une boîte de taille Y si X &lt; Y. Notez donc qu'une boîte ne rentre pas dans une autre de même taille. Par ailleurs, deux boîtes de taille X et Y peuvent être placées côte à côte à l'intérieur d'une boîte de taille Z si (X+Y) &lt; Z.
+</p>
+
+<p style="text-align: justify;">
+    Le schéma suivant illustre les quatre configurations possibles pour que le drone effectue un trajet.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}drone.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p style="text-align: justify;">
+    Dans ce problème, les tailles des trois boîtes sont données dans l'ordre croissant et votre programme doit calculer le nombre minimum de voyages que le drone peut effectuer pour transporter les trois boîtes.
+</p>
+
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Données d'entrée:</strong> Trois nombres entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Entier.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Exemples:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
