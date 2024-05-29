@@ -1,0 +1,41 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Sie müssen drei leere Kisten mit einer Drohne transportieren, die bei jeder Fahrt nur eine Kiste auf einmal heben kann. Mit anderen Worten: Sie können die drei leeren Kisten immer transportieren, indem Sie drei Fahrten mit der Drohne machen. Aber Sie könnten auch weniger als drei Fahrten machen, wenn Sie eine Kiste in eine andere stecken können. Die Kisten sind würfelförmig und die einzige Einschränkung beim Einsetzen einer Kiste in eine andere ist die Größe, unabhängig vom Gewicht.
+</p>
+
+<p style="text-align: justify;">
+    Eine Schachtel der Größe X kann in eine Schachtel der Größe Y gestellt werden, wenn X &lt; Y. Beachten Sie also, dass eine Schachtel nicht in eine andere der gleichen Größe passt. Außerdem können zwei Schachteln der Größen X und Y nebeneinander in eine Schachtel der Größe Z gestellt werden, wenn (X+Y) &lt; Z.
+</p>
+
+<p style="text-align: justify;">
+    Das folgende Schema veranschaulicht die vier möglichen Konfigurationen, in denen die Drohne eine Reise machen kann.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}drone.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p style="text-align: justify;">
+    Bei diesem Problem sind die Größen der drei Kisten in aufsteigender Reihenfolge angegeben und Ihr Programm muss die minimale Anzahl von Fahrten berechnen, die die Drohne machen kann, um alle drei Kisten zu transportieren.
+</p>
+
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Drei ganze Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ganzzahl.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
