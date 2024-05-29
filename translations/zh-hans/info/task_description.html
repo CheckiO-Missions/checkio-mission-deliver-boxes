@@ -1,0 +1,41 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    你需要用无人机运送三个空箱子，而无人机每次只能举起一个箱子。换句话说，你可以用无人机运送三次，每次都能运送三个空箱子。不过，如果能把一个箱子放在另一个箱子里，也许可以少于三次。箱子是立方体的，把一个箱子放进另一个箱子的唯一限制就是尺寸，而与重量无关。
+</p>
+
+<p style="text-align: justify;">
+    如果 X &lt; Y，那么大小为 X 的盒子可以放在大小为 Y 的盒子里面。此外，如果 (X+Y) &lt; Z，那么大小为 X 和 Y 的两个盒子可以并排放在大小为 Z 的盒子里面。
+</p>
+
+<p style="text-align: justify;">
+    下面的示意图说明了无人机进行飞行的四种可能配置。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}drone.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p style="text-align: justify;">
+    在这个问题中，三个箱子的大小按升序排列，您的程序必须计算出无人机运送所有三个箱子的最少行程次数。
+</p>
+
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>三个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>整数.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>示例</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
